@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+    <!-- <img src="images/img.jpg" alt="Your image description"> -->
+      <nav>
+      <img src="images/Logo.jpg" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-square-caret-down" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software Developer | Devops Enthusiast</p>
+        <h1>Hello, I'm <span>Vishvajeet</span><br>  Singh Chouhan </h1>
+      </div>
+    </div>
+    </div>
+<!--------------------------- About Section--------------------- -->
+
+<div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg" alt="check your network">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>As a computer science undergraduate,
+          I bring practical experience in front-end development and backend engineering,
+          with proficiency in data structures. Recognized for excellent teamwork and communication 
+          skills, I am eager to begin my career with a reputable IT company. Additionally, 
+          I am an aspiring cloud computing enthusiast, proficient in DevOps. 
+          Dedicated to mastering cloud technology complexities, I aim to optimize infrastructure 
+          and streamline deployment processes through automation, contributing to industry 
+          innovation.
+
+          <div class="tabtitles">
+            <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span><h3>Front-End Development</h3></span>HTML, CSS, Javascript</li>
+            <li><span><h3>Amazon Web Service</h3></span>EC2, S3 Bucket, RDS, Scaling</li>
+            <li><span><h3>Devops</h3></span>Docker , Git & Github</li>
+          </ul>
+          </div>
+          <div class="tab-contents" id="Projects">
+            <ul>
+              <li><span><h3>Wifi Login Automation </h3></span>Automated WiFi login using Python and Selenium for streamlined authentication. </li>
+              <li><span><h3>Amazon Clone </h3></span>Modern UI clone and build a static front-end  of Amazon shopping Website.</li>
+              <li><span><h3>Courier Management Service</h3></span>Track, add,cancel and for Admin: Add,Remove and Track Package</li>
+              <li><span><h3>Hangman-</h3></span>Hangman Image guessing built using Python Tkinter Library</li>
+            </div>
+              <div class="tab-contents" id="Education">
+              <ul>
+                <li><span><h3>Bachelor of Technology </h3></span>Computer Science & Enginnering <br> CGPA: 7.4 (currently) |  Expected Graduation: 2025</li>
+                <li><span><h3>Diploma</h3></span>Goverment Polytechnic College
+                  <br>CGPA: 7.9 |   2019 - 2022</li>
+              </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+    // for(tablink of tablinks){
+    //   tablink.classList.remove("active-link");
+    // }
+  }
+</script>
+
+<!-- ----------------services----------------------- -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-house-signal"></i>
+        <h2>Wifi Login Automation</h2>
+        <p>Simplifies LPU login using Selenium WebDriver for streamlined network access with automation.</p>
+        <h3>Refer Below to My Work</h3>
+      </div>
+    <div>
+      <i class="fa-solid fa-gamepad"></i>
+      <h2>Hangman Image Guessing Game</h2>
+      <p>Guess letters to reveal image, enhancing vocabulary and visual recognition skills in interactive gameplay.</p>
+      <h3>Refer Below to My Work</h3>
+    </div>
+    <div>
+      <i class="fa-brands fa-amazon"></i>
+      <h2>Amazon Website Clone</h2>
+      <p> HTML/CSS replica offers intuitive browsing, mimicking original platform's layout and functionality.</p>
+      <h3>Refer Below to My Work</h3>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- -------------portfolio--------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.jpg" alt="check network connection">
+        <div class="layer">
+          <h3>Wifi Automation</h3>
+          <p>Automates LPU WiFi login using Selenium for seamless network access.</p>
+        <a href="https://github.com/BlAcKyCoDe50/Wifi_Automation" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.jpg" alt="check network connection">
+        <div class="layer">
+          <h3>Hangman-Game</h3>
+          <p>Interactive hangman game enhances vocabulary and visual recognition skills.</p>
+        <a href="https://github.com/BlAcKyCoDe50/Hangman-Game" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.jpg" alt="check network connection">
+      <div class="layer">
+          <h3>Amazon Clone</h3>
+          <p>HTML/CSS replica offers intuitive browsing, mimicking original platform's layout.</p>
+        <a href="https://blackycode50.github.io/Amazon_Clone/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+  </div>
+  <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+<!-- -----------------------------Contact----------------------------------- -->
+<div id="contact">
+   <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> blackshadow25984@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> +91 62XXX1XX0</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/vishwajeet-singh-chouhan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://github.com/BlAcKyCoDe50" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+        <a href="images/Vishvajeet_CV.pdf" download class="btn btn2" >Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="YourEmail" required>
+            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+   </div>
+   <div class="copyright">
+    <p>Copyright © Vishvajeet | Made with <i class="fa-solid fa-heart"></i> by Vishvajeet</p>
+   </div>
+
+</div>
+
+
+
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+  
+  function openmenu(){
+   sidemenu.style.right="0";
+  }
+
+  function closemenu(){
+   sidemenu.style.right="-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxI6qzesRh2RSb33ImoKxbaREPJ4OKZRbRE-NNtr6wldwF-jPqbbxETpibPBSpESaN3/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent to Vishu Successfully!!"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },1500)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
