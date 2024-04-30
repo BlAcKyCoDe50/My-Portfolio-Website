@@ -4,7 +4,7 @@ Welcome to my Portfolio Website! This repository contains the source code and as
 
 ## Overview
 
-This portfolio website serves as a showcase of my skills, projects, and experiences. It provides visitors with an overview of who I am, what I do, and the work I've done. The website is designed to be visually appealing, user-friendly, and informative.
+This portfolio website serves as a showcase of my skills, projects, and experiences. It provides visitors with an overview of who I am, what I do, and the work I've done.The website is designed to be visually appealing, user-friendly, and informative.
 
 ## Features
 
