@@ -21,7 +21,8 @@ This portfolio website serves as a showcase of my skills, projects, and experien
 
 ## Getting Started
 
-To view the website, simply [click here](https://blackycode50.github.io/My-Portfolio-Website/).
+To view the website,
+### [click here](https://blackycode50.github.io/My-Portfolio-Website/).
 
 To run the website locally:
 
